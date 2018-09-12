@@ -1,0 +1,274 @@
+* {box-sizing: border-box;}
+
+/* saira-extra-condensed-medium */
+@font-face {
+    font-family: 'Saira Extra Condensed';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Saira ExtraCondensed Medium'), local('SairaExtraCondensed-Medium'),
+       url('fonts/sairaextracondensed-medium-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/sairaextracondensed-medium-webfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('fonts/sairaextracondensed-medium-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+/* saira-extra-condensed-bold */
+@font-face {
+    font-family: 'Saira Extra Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Saira ExtraCondensed Bold'), local('SairaExtraCondensed-Bold'),
+        url('fonts/sairaextracondensed-bold-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('fonts/sairaextracondensed-bold-webfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('fonts/sairaextracondensed-bold-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+/* ubuntu-mono-regular */
+@font-face {
+    font-family: 'Ubuntu Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ubuntu Mono'), local('UbuntuMono-Regular'),
+        url('fonts/ubuntumono-regular-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('fonts/ubuntumono-regular-webfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('fonts/ubuntumono-regular-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+  }
+  
+  /* ubuntu-mono-700 */
+  @font-face {
+    font-family: 'Ubuntu Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Ubuntu Mono Bold'), local('UbuntuMono-Bold'),
+        url('fonts/ubuntumono-bold-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('fonts/ubuntumono-bold-webfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('fonts/ubuntumono-bold-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+  }
+
+    html,body{
+        margin: 0rem;
+        line-height: 1.15;
+        background-color: #f3f3f3;
+    }
+
+    .wrapper {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .wrapper > * {
+        border: 2px solid rgb(255, 255, 255);
+        background-color: #fff;
+        border-radius: .4rem;
+        padding: 0.5rem;
+        font-family: 'Saira Extra Condensed', serif;
+        color: #585858;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    nav ul {
+        list-style: none;
+        margin: .75rem 0 1rem 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.4rem;
+    }
+    nav ul li {
+        margin: 0.25rem;
+    }
+    aside ul {
+        list-style: none;
+        margin: .75rem 0 1rem 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.4rem;
+    }
+    aside ul li:first-child, nav ul li:first-child {
+        margin-bottom: 1rem;
+        width: 100%;
+       }
+  
+.main-head {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.content {
+  grid-area: content;
+  padding: .75rem;
+}
+.main-nav {
+  grid-area: nav;
+  text-align: center;
+  min-width: 9.5rem;
+}
+.side {
+  grid-area: sidebar;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.ad {
+  grid-area: ad;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  text-align: center;
+}
+.main-footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  font-size: .9rem;
+  text-align: center;
+}
+.wrapper {
+  display: grid;
+  grid-row-gap: 0.75rem;
+  grid-template-areas: 
+    "header"
+    "nav"
+    "content"
+    "sidebar"
+    "ad"
+    "footer";
+}
+@media (min-width: 500px) {
+    html,body{
+        margin: .75rem;
+    }
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: .75rem;
+    grid-row-gap: 1.75rem;
+    grid-template-areas: 
+      "header  header"
+      "nav     nav"
+      "sidebar content"
+      "ad      footer";
+  }
+  .wrapper > * {
+    padding: 1rem;
+    }
+  .content {
+    padding: 1.25rem;
+  }
+  h1 {
+    font-size: 6rem!important;
+    line-height: 5.5rem!important;
+  }
+}
+@media (min-width: 700px) {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-column-gap: 1.75rem;
+    grid-row-gap: 2.75rem;
+    grid-template-areas: 
+      "header header  header"
+      "nav    content sidebar"
+      "nav    content ad"
+      "footer footer  footer"
+   }
+   nav ul {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+   }
+}
+a {
+    color: #000;
+    text-decoration: none;
+    background-color: rgb(255,255,255, 0);
+}
+a:hover {
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Saira Extra Condensed', serif!important;
+    font-weight: 700;
+    color: #373737;
+    margin: .75rem 0 .5rem 0;
+}
+h1 {
+    font-size: 5rem;
+    line-height: 4.5rem;
+    margin: 1.35rem 0 .5rem;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 3.5rem;
+}
+h3 {
+    color: #545454;
+    font-size: 1.4rem;
+}
+
+p {
+    font-family: 'Ubuntu Mono'!important;
+}
+
+.subheading {
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #757575;
+}
+
+button {
+    background-color: rgb(255,255,255, 0);
+    border: 1px solid #f3f3f3;
+    color: #373737;
+    padding: 0.75rem 0.4rem;
+    width: 100%;
+    font-family: 'Saira Extra Condensed', serif;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.40rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    -webkit-transition: all 200ms ease-in-out;
+       -moz-transition: all 200ms ease-in-out;
+         -o-transition: all 200ms ease-in-out;
+            transition: all 200ms ease-in-out;
+}
+
+.btn-post {
+    margin: .5rem 0;
+}
+
+button:hover {
+    border: 1px solid #757575;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.18), 0 2px 4px rgba(0,0,0,0.28);
+    color: #000;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+svg {
+    display: block;
+    width: 100%;
+    height: 3.5rem;
+}
+
+.b-lazy {
+    -webkit-transition: opacity 500ms ease-in-out;
+       -moz-transition: opacity 500ms ease-in-out;
+         -o-transition: opacity 500ms ease-in-out;
+            transition: opacity 500ms ease-in-out;
+             max-width: 100%;
+               opacity: 0.5;
+}
+.b-lazy.b-loaded {
+               opacity: 1;
+}
